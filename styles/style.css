@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3;
+    grid-row: 2;
+    margin-top: 150px;
+    font-family: 'Roboto', sans-serif;
+    background-color: lightblue;
+}
+
+.counter {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 45px;
+}
+
+.buttons {
+    box-sizing: border-box;
+}
+
+.inner-buttons {
+    border-radius: 10px;
+    width: 75px;
+    height: 50px;
+    background-color: white;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.decrease:hover{
+ background-color: red; 
+ animation: fadeIn 1s;
+}
+
+.increase:hover{
+    background-color: green;
+    animation: fadeIn 1s;
+}
+
+.be-green {
+    color: green;
+}
+.be-red {
+    color: red;
+}
